@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+   margin-left: auto;
+    color: #fff;
+}
+
+/* Main container */
+.container {
+    background: #1c1c1c;
+    width: 100%;
+    max-width: 420px;
+    right: 60%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+      
+}
+
+/* Headings */
+.container h1,
+.container h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Product list */
+#product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* Product card */
+.product {
+    background: #2a2a2a;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Product text */
+.product span {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Add to cart button */
+.product button {
+    background: #7c3aed;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.remove-btn {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #d9363e;
+    transform: scale(1.05);
+}
+
+.remove-btn:active {
+    transform: scale(0.95);
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2a2a;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+
+.product button:hover {
+    background: #6d28d9;
+}
+
+/* Empty cart text */
+#empty-cart {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Cart total section */
+#cart-total {
+    margin-top: 15px;
+    background: #2a2a2a;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide */
+.hidden {
+    display: none;
+}
+
+/* Total price */
+#total-price {
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+/* Checkout button */
+#checkout-btn {
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#checkout-btn:hover {
+    background: #6d28d9;
+}
